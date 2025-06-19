@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Cumbre - Gestión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+          },
+          colors: {
+            theme: {
+              black: '#020300',
+              snow: '#FBF5F3',
+              crimson: '#D7263D',
+
+              appBg: '#FBF5F3',      // Snow
+              surface: '#FBF5F3',     // Snow (for Cards, Header)
+              containerAlt: '#020300',// Black (for Sidebar)
+              
+              accent: '#D7263D',      // Crimson
+              accentLight: '#FCE8EB', // Lighter Crimson for icon backgrounds etc.
+              onAccent: '#FBF5F3',    // Snow (for text/icons on Crimson background)
+              
+              textPrimary: '#020300', // Black (for text on light backgrounds)
+              textPrimaryDarkBg: '#FBF5F3', // Snow (for text on dark backgrounds like sidebar)
+              textSecondary: '#5A5B5A',// Mid-gray derived from black
+              
+              border: '#EAE0DE',      // Subtle border, darker Snow or light gray
+            },
+          }
+        }
+      }
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@^4"></script> 
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "chart.js/": "https://esm.sh/chart.js@^4.5.0/",
+    "chart.js": "https://esm.sh/chart.js@^4.5.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/lacumbreapp-v1/assets/index-CUW-lIhC.js"></script>
+</head>
+<body class="bg-theme-appBg font-sans">
+  <div id="root"></div>
+</body>
+</html>
